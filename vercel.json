@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd frontend && yarn build",
+  "outputDirectory": "frontend/build",
+  "installCommand": "cd frontend && yarn install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://YOUR_BACKEND_URL/api/:path*" }
+  ]
+}

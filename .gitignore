@@ -1,0 +1,32 @@
+# Dependencies
+frontend/node_modules/
+frontend/build/
+backend/__pycache__/
+backend/*.pyc
+backend/mlruns/
+
+# Environment
+backend/.env
+frontend/.env
+
+# OS
+.DS_Store
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Test reports
+test_reports/
+
+# IDE
+.vscode/
+.idea/
+
+# Emergent
+.emergent/
+-e 
+# Environment files
+*.env
+*.env.*

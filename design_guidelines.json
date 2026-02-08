@@ -1,0 +1,128 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Anti-AI Creative Designer",
+    "mission": "Create a 'Tactical Humanitarian' aesthetic that balances high-density data with emotional impact."
+  },
+  "project_scope": {
+    "name": "Virtue Foundation IDP - Medical Desert Tracker",
+    "theme_mode": "dark",
+    "aesthetic": "Clinical Night Mode / Tactical Operations",
+    "target_audience": "NGO Planners, Healthcare Coordinators"
+  },
+  "typography": {
+    "font_family_headings": "Manrope",
+    "font_family_body": "Public Sans",
+    "font_family_code": "JetBrains Mono",
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-slate-400"
+    },
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Public+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    ]
+  },
+  "colors": {
+    "palette_name": "Midnight Clinical",
+    "background": {
+      "default": "#0B1120",
+      "paper": "#1E293B",
+      "subtle": "#111827"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "muted": "#64748B",
+      "inverse": "#0F172A"
+    },
+    "brand": {
+      "primary": "#38BDF8",
+      "primary_hover": "#0EA5E9",
+      "secondary": "#6366F1",
+      "accent": "#F472B6"
+    },
+    "functional": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#F43F5E",
+      "info": "#3B82F6",
+      "medical_desert": "#F43F5E",
+      "well_served": "#10B981"
+    },
+    "gradients": {
+      "subtle_glow": "linear-gradient(180deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0.05) 100%)",
+      "card_border": "linear-gradient(to bottom right, rgba(255,255,255,0.1), rgba(255,255,255,0.02))"
+    }
+  },
+  "visual_enhancers": {
+    "border_radius": {
+      "sm": "rounded-sm",
+      "md": "rounded-md",
+      "lg": "rounded-lg",
+      "xl": "rounded-xl",
+      "full": "rounded-full"
+    },
+    "shadows": {
+      "card": "0 1px 2px 0 rgba(0, 0, 0, 0.5)",
+      "float": "0 10px 30px -10px rgba(0, 0, 0, 0.7)",
+      "glow": "0 0 15px rgba(56, 189, 248, 0.3)"
+    },
+    "glassmorphism": {
+      "default": "backdrop-blur-xl bg-slate-900/70 border border-white/10 shadow-xl",
+      "heavy": "backdrop-blur-2xl bg-slate-950/80 border border-white/5"
+    }
+  },
+  "component_strategies": {
+    "buttons": {
+      "primary": "bg-sky-500 hover:bg-sky-600 text-white font-medium rounded-lg px-6 py-2 transition-all shadow-[0_0_10px_rgba(56,189,248,0.3)] hover:shadow-[0_0_20px_rgba(56,189,248,0.5)]",
+      "secondary": "bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-lg px-6 py-2 transition-all",
+      "ghost": "hover:bg-slate-800/50 text-slate-400 hover:text-white transition-colors"
+    },
+    "cards": {
+      "dashboard": "bg-[#1E293B] border border-slate-700/50 rounded-xl p-6 relative overflow-hidden",
+      "map_overlay": "backdrop-blur-md bg-slate-900/80 border border-slate-700/50 rounded-lg shadow-2xl text-slate-100"
+    },
+    "inputs": {
+      "default": "bg-slate-950/50 border border-slate-700 text-slate-200 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-lg placeholder:text-slate-600"
+    }
+  },
+  "layout_grids": {
+    "dashboard_bento": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6",
+    "map_container": "relative w-full h-[calc(100vh-4rem)] bg-slate-950 overflow-hidden"
+  },
+  "image_assets": {
+    "placeholders": {
+      "doctor_avatar_1": "https://images.unsplash.com/photo-1666887360742-974c8fce8e6b?crop=entropy&cs=srgb&fm=jpg&w=200&h=200&fit=crop",
+      "doctor_avatar_2": "https://images.unsplash.com/photo-1678695972687-033fa0bdbac9?crop=entropy&cs=srgb&fm=jpg&w=200&h=200&fit=crop",
+      "clinic_exterior": "https://images.unsplash.com/photo-1654533138847-b210d753eb26?crop=entropy&cs=srgb&fm=jpg&w=800",
+      "urban_clinic": "https://images.unsplash.com/photo-1742077182284-de4b1ffa6254?crop=entropy&cs=srgb&fm=jpg&w=800",
+      "medical_equipment": "https://images.unsplash.com/photo-1641877492086-771bc14a8e5e?crop=entropy&cs=srgb&fm=jpg&w=800"
+    },
+    "icons_library": "lucide-react"
+  },
+  "libraries": {
+    "charts": "recharts",
+    "maps": "react-leaflet leaflet",
+    "animations": "framer-motion",
+    "toast": "sonner",
+    "icons": "lucide-react"
+  },
+  "universal_guidelines": [
+    "NEVER use generic full-screen gradients. Use subtle radial glows or noise textures.",
+    "Dark mode is NOT just black. Use Slate-900 (#0F172A) as the deepest shade to maintain warmth and reduce eye strain.",
+    "Data Density: In the dashboard, avoid massive whitespace. This is a tool for professionals. Use 'Mode B' Bento Grid.",
+    "Map Interaction: The map is the hero. Controls should float over it (Glassmorphism), not push it aside.",
+    "Accessibility: Ensure text contrast on dark backgrounds meets APCA standards. Blue text on dark grey is often hard to read; use Sky-400 or Sky-300 instead of standard Blue-500.",
+    "All interactive elements MUST have `data-testid`."
+  ],
+  "instructions_to_main_agent": {
+    "step_1": "Install dependencies: `npm install framer-motion recharts leaflet react-leaflet lucide-react sonner clsx tailwind-merge`",
+    "step_2": "Configure Tailwind with the 'Midnight Clinical' palette defined in colors section.",
+    "step_3": "Create the 'GlassCard' and 'BentoGrid' reusable components first.",
+    "step_4": "Implement the Map View using Leaflet with a dark tile layer (e.g., CartoDB Dark Matter).",
+    "step_5": "Build the RAG Chat interface as a floating drawer or dedicated sidebar with a 'Tactical Terminal' aesthetic."
+  }
+}
